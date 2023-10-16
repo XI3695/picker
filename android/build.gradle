@@ -21,7 +21,7 @@ def getExtOrIntegerDefault(name) {
 apply plugin: 'com.android.library'
 
 android {
-  def agpVersion = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION
+  def agpVersion = "6.8.3"
   if (agpVersion.tokenize('.')[0].toInteger() >= 7) {
     namespace "com.reactnativecommunity.picker"
   }
